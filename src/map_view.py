@@ -117,63 +117,61 @@ def _numeric_legend_html(title: str, colors: list[str], minimum: float, maximum:
     """Create a readable floating legend for numeric layers.
 
     Branca's default SVG legend uses dark tick text and can overlap its caption on
-    the CARTO dark basemap. This custom legend gives the color ramp a light glass
-    panel, black labels, and enough vertical spacing for the layer title.
+    the CARTO dark basemap. The app already shows the active layer name above the
+    map, so this legend intentionally keeps only the color ramp and gradient ticks.
     """
 
     midpoint = (minimum + maximum) / 2
     gradient = ", ".join(colors)
-    ticks = "".join(
-        f"<span>{html.escape(_format_legend_number(value))}</span>"
-        for value in (minimum, midpoint, maximum)
+    tick_values = (minimum, midpoint, maximum)
+    tick_colors = (
+        (colors[1], colors[-2], colors[-1])
+        if len(colors) >= 4
+        else (colors[0], colors[len(colors) // 2], colors[-1])
     )
-    safe_title = html.escape(title)
+    ticks = "".join(
+        f'<span style="color:{color}!important">{html.escape(_format_legend_number(value))}</span>'
+        for value, color in zip(tick_values, tick_colors)
+    )
     return f"""
     <style>
       .rpl-numeric-legend {{
         position:fixed;
-        top:22px;
+        top:24px;
         right:76px;
         z-index:9999;
-        width:360px;
-        padding:13px 15px 12px;
-        color:#050706!important;
-        background:rgba(244,244,240,.94);
-        border:1px solid rgba(10,12,11,.25);
-        box-shadow:0 14px 34px rgba(0,0,0,.28);
-        backdrop-filter:blur(8px);
+        width:340px;
+        padding:0;
+        color:#F4F4F0!important;
+        background:transparent;
+        border:0;
+        box-shadow:none;
         font-family:Inter,"Noto Sans SC",Arial,sans-serif;
-      }}
-      .rpl-numeric-legend .rpl-legend-title {{
-        margin:0 0 9px;
-        color:#050706!important;
-        font-size:13px;
-        line-height:1.2;
-        font-weight:800;
-        letter-spacing:.02em;
+        pointer-events:none;
       }}
       .rpl-numeric-legend .rpl-legend-bar {{
-        height:11px;
-        border:1px solid rgba(10,12,11,.28);
+        height:9px;
+        border:1px solid rgba(244,244,240,.32);
+        box-shadow:0 2px 8px rgba(0,0,0,.46);
         background:linear-gradient(90deg,{gradient});
       }}
       .rpl-numeric-legend .rpl-legend-ticks {{
         display:flex;
         justify-content:space-between;
         gap:12px;
-        margin-top:7px;
-        color:#050706!important;
+        margin-top:6px;
         font-size:12px;
-        font-weight:700;
+        font-weight:800;
         line-height:1.1;
       }}
       .rpl-numeric-legend .rpl-legend-ticks span {{
-        color:#050706!important;
-        text-shadow:0 1px 0 rgba(255,255,255,.55);
+        text-shadow:
+          0 1px 3px rgba(0,0,0,.96),
+          0 0 2px rgba(244,244,240,.68),
+          0 0 7px rgba(0,0,0,.72);
       }}
     </style>
     <div class="rpl-numeric-legend">
-      <div class="rpl-legend-title">{safe_title}</div>
       <div class="rpl-legend-bar"></div>
       <div class="rpl-legend-ticks">{ticks}</div>
     </div>
