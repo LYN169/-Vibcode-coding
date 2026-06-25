@@ -16,6 +16,39 @@ html, body, [class*="css"] { font-family:'Inter','Noto Sans SC',sans-serif; }
 [data-testid="stSidebar"] { background:#F4F4F0; border-right:1px solid rgba(182,255,0,.45); }
 [data-testid="stSidebar"] * { color:#0A0C0B; }
 [data-testid="stSidebar"] .stButton button { border:1px solid #0A0C0B; }
+[data-testid="stSidebar"] div[data-baseweb="select"] > div {
+  background:#FFFFFF!important;
+  color:#0A0C0B!important;
+  border:1px solid rgba(10,12,11,.45)!important;
+  box-shadow:none!important;
+}
+[data-testid="stSidebar"] div[data-baseweb="select"] > div:hover,
+[data-testid="stSidebar"] div[data-baseweb="select"] > div:focus-within {
+  border-color:#6A8F00!important;
+}
+[data-testid="stSidebar"] div[data-baseweb="select"] span,
+[data-testid="stSidebar"] div[data-baseweb="select"] svg,
+[data-testid="stSidebar"] div[data-baseweb="select"] input {
+  color:#0A0C0B!important;
+  fill:#0A0C0B!important;
+}
+[data-testid="stSidebar"] div[data-baseweb="select"] input::placeholder { color:#5B625E!important; opacity:1!important; }
+[data-baseweb="popover"] ul,
+[data-baseweb="menu"] {
+  background:#FFFFFF!important;
+  color:#0A0C0B!important;
+  border:1px solid rgba(10,12,11,.18)!important;
+}
+[data-baseweb="popover"] li,
+[data-baseweb="menu"] li,
+[role="option"] {
+  color:#0A0C0B!important;
+}
+[data-baseweb="popover"] li:hover,
+[data-baseweb="menu"] li:hover,
+[role="option"]:hover {
+  background:#EAF5C7!important;
+}
 [data-testid="stHeader"] { background:transparent; }
 .block-container { max-width:1520px; padding-top:1.1rem; padding-bottom:3rem; }
 .hero { position:relative; overflow:hidden; min-height:270px; padding:38px 42px; border:1px solid rgba(255,255,255,.15);

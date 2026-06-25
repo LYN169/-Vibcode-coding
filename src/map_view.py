@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import html
 from typing import Any
 
 import folium
@@ -96,6 +97,86 @@ def _legend_html(title: str, colors: dict[str, str]) -> str:
     <div style="position:fixed;left:22px;bottom:28px;z-index:9999;background:rgba(8,10,9,.92);
     color:#fff;padding:14px 16px;border:1px solid rgba(255,255,255,.20);font-size:12px;
     box-shadow:0 10px 30px rgba(0,0,0,.25);"><b>{title}</b>{rows}</div>
+    """
+
+
+def _format_legend_number(value: float) -> str:
+    """Format numeric legend ticks for compact map display."""
+
+    absolute = abs(value)
+    if absolute >= 1000:
+        return f"{value:,.0f}"
+    if absolute >= 10:
+        return f"{value:,.2f}".rstrip("0").rstrip(".")
+    if absolute >= 1:
+        return f"{value:,.3f}".rstrip("0").rstrip(".")
+    return f"{value:,.4f}".rstrip("0").rstrip(".")
+
+
+def _numeric_legend_html(title: str, colors: list[str], minimum: float, maximum: float) -> str:
+    """Create a readable floating legend for numeric layers.
+
+    Branca's default SVG legend uses dark tick text and can overlap its caption on
+    the CARTO dark basemap. This custom legend gives the color ramp a light glass
+    panel, black labels, and enough vertical spacing for the layer title.
+    """
+
+    midpoint = (minimum + maximum) / 2
+    gradient = ", ".join(colors)
+    ticks = "".join(
+        f"<span>{html.escape(_format_legend_number(value))}</span>"
+        for value in (minimum, midpoint, maximum)
+    )
+    safe_title = html.escape(title)
+    return f"""
+    <style>
+      .rpl-numeric-legend {{
+        position:fixed;
+        top:22px;
+        right:76px;
+        z-index:9999;
+        width:360px;
+        padding:13px 15px 12px;
+        color:#050706!important;
+        background:rgba(244,244,240,.94);
+        border:1px solid rgba(10,12,11,.25);
+        box-shadow:0 14px 34px rgba(0,0,0,.28);
+        backdrop-filter:blur(8px);
+        font-family:Inter,"Noto Sans SC",Arial,sans-serif;
+      }}
+      .rpl-numeric-legend .rpl-legend-title {{
+        margin:0 0 9px;
+        color:#050706!important;
+        font-size:13px;
+        line-height:1.2;
+        font-weight:800;
+        letter-spacing:.02em;
+      }}
+      .rpl-numeric-legend .rpl-legend-bar {{
+        height:11px;
+        border:1px solid rgba(10,12,11,.28);
+        background:linear-gradient(90deg,{gradient});
+      }}
+      .rpl-numeric-legend .rpl-legend-ticks {{
+        display:flex;
+        justify-content:space-between;
+        gap:12px;
+        margin-top:7px;
+        color:#050706!important;
+        font-size:12px;
+        font-weight:700;
+        line-height:1.1;
+      }}
+      .rpl-numeric-legend .rpl-legend-ticks span {{
+        color:#050706!important;
+        text-shadow:0 1px 0 rgba(255,255,255,.55);
+      }}
+    </style>
+    <div class="rpl-numeric-legend">
+      <div class="rpl-legend-title">{safe_title}</div>
+      <div class="rpl-legend-bar"></div>
+      <div class="rpl-legend-ticks">{ticks}</div>
+    </div>
     """
 
 
@@ -228,7 +309,9 @@ def build_folium_map(frame: gpd.GeoDataFrame, layer_name: str) -> folium.Map:
             highlight_function=lambda _: {"weight": 2.4, "color": "#FFFFFF", "fillOpacity": 0.92},
             tooltip=tooltip,
         ).add_to(fmap)
-        colormap.add_to(fmap)
+        fmap.get_root().html.add_child(
+            folium.Element(_numeric_legend_html(config["caption"], colors, minimum, maximum))
+        )
     else:
         palette = MISMATCH_COLORS if config["kind"] == "mismatch" else LISA_COLORS
 
