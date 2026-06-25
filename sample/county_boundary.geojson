@@ -1,0 +1,449 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "010101",
+        "province": "北澜省",
+        "city": "临河市",
+        "county": "新川区",
+        "area_km2": 520
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              110.0,
+              31.0
+            ],
+            [
+              111.0,
+              31.0
+            ],
+            [
+              111.0,
+              32.0
+            ],
+            [
+              110.0,
+              32.0
+            ],
+            [
+              110.0,
+              31.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "010102",
+        "province": "北澜省",
+        "city": "临河市",
+        "county": "长桥县",
+        "area_km2": 610
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              111.0,
+              31.0
+            ],
+            [
+              112.0,
+              31.0
+            ],
+            [
+              112.0,
+              32.0
+            ],
+            [
+              111.0,
+              32.0
+            ],
+            [
+              111.0,
+              31.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "010201",
+        "province": "北澜省",
+        "city": "沧岭市",
+        "county": "青石县",
+        "area_km2": 740
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              112.0,
+              31.0
+            ],
+            [
+              113.0,
+              31.0
+            ],
+            [
+              113.0,
+              32.0
+            ],
+            [
+              112.0,
+              32.0
+            ],
+            [
+              112.0,
+              31.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "010202",
+        "province": "北澜省",
+        "city": "沧岭市",
+        "county": "望城区",
+        "area_km2": 480
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              113.0,
+              31.0
+            ],
+            [
+              114.0,
+              31.0
+            ],
+            [
+              114.0,
+              32.0
+            ],
+            [
+              113.0,
+              32.0
+            ],
+            [
+              113.0,
+              31.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "020101",
+        "province": "中岳省",
+        "city": "青原市",
+        "county": "丰谷县",
+        "area_km2": 820
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              110.0,
+              30.0
+            ],
+            [
+              111.0,
+              30.0
+            ],
+            [
+              111.0,
+              31.0
+            ],
+            [
+              110.0,
+              31.0
+            ],
+            [
+              110.0,
+              30.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "020102",
+        "province": "中岳省",
+        "city": "青原市",
+        "county": "东浦县",
+        "area_km2": 560
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              111.0,
+              30.0
+            ],
+            [
+              112.0,
+              30.0
+            ],
+            [
+              112.0,
+              31.0
+            ],
+            [
+              111.0,
+              31.0
+            ],
+            [
+              111.0,
+              30.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "020201",
+        "province": "中岳省",
+        "city": "星港市",
+        "county": "星海区",
+        "area_km2": 450
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              112.0,
+              30.0
+            ],
+            [
+              113.0,
+              30.0
+            ],
+            [
+              113.0,
+              31.0
+            ],
+            [
+              112.0,
+              31.0
+            ],
+            [
+              112.0,
+              30.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "020202",
+        "province": "中岳省",
+        "city": "星港市",
+        "county": "岑山县",
+        "area_km2": 900
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              113.0,
+              30.0
+            ],
+            [
+              114.0,
+              30.0
+            ],
+            [
+              114.0,
+              31.0
+            ],
+            [
+              113.0,
+              31.0
+            ],
+            [
+              113.0,
+              30.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "030101",
+        "province": "南川省",
+        "city": "云泽市",
+        "county": "云溪县",
+        "area_km2": 680
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              110.0,
+              29.0
+            ],
+            [
+              111.0,
+              29.0
+            ],
+            [
+              111.0,
+              30.0
+            ],
+            [
+              110.0,
+              30.0
+            ],
+            [
+              110.0,
+              29.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "030102",
+        "province": "南川省",
+        "city": "云泽市",
+        "county": "白鹭县",
+        "area_km2": 760
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              111.0,
+              29.0
+            ],
+            [
+              112.0,
+              29.0
+            ],
+            [
+              112.0,
+              30.0
+            ],
+            [
+              111.0,
+              30.0
+            ],
+            [
+              111.0,
+              29.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "030201",
+        "province": "南川省",
+        "city": "岚江市",
+        "county": "岚江区",
+        "area_km2": 500
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              112.0,
+              29.0
+            ],
+            [
+              113.0,
+              29.0
+            ],
+            [
+              113.0,
+              30.0
+            ],
+            [
+              112.0,
+              30.0
+            ],
+            [
+              112.0,
+              29.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "county_code": "030202",
+        "province": "南川省",
+        "city": "岚江市",
+        "county": "松林县",
+        "area_km2": 880
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              113.0,
+              29.0
+            ],
+            [
+              114.0,
+              29.0
+            ],
+            [
+              114.0,
+              30.0
+            ],
+            [
+              113.0,
+              30.0
+            ],
+            [
+              113.0,
+              29.0
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

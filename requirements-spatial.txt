@@ -1,0 +1,4 @@
+# Optional spatial analysis extras. The rest of the app works without these packages.
+libpysal>=4.10
+esda>=2.5
+

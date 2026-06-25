@@ -1,0 +1,11 @@
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.venv/
+.streamlit/secrets.toml
+outputs/diagnostics/
+outputs/docs/
+outputs/paper_tables/
+outputs/processed/
+outputs/real_data_v2/
+tests/
