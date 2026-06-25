@@ -18,9 +18,18 @@ html, body, [class*="css"] { font-family:'Inter','Noto Sans SC',sans-serif; }
 [data-testid="stSidebar"] .stButton button { border:1px solid #0A0C0B; }
 [data-testid="stSidebar"] div[data-baseweb="select"] > div {
   background:#FFFFFF!important;
+  background-color:#FFFFFF!important;
   color:#0A0C0B!important;
   border:1px solid rgba(10,12,11,.45)!important;
   box-shadow:none!important;
+}
+[data-testid="stSidebar"] div[data-baseweb="select"] > div[class][class][class],
+[data-testid="stSidebar"] div[data-baseweb="select"] > div[class][class][class]:hover,
+[data-testid="stSidebar"] div[data-baseweb="select"] > div[class][class][class]:focus-within {
+  background:#FFFFFF!important;
+  background-color:#FFFFFF!important;
+  color:#0A0C0B!important;
+  border-color:rgba(10,12,11,.45)!important;
 }
 [data-testid="stSidebar"] div[data-baseweb="select"] > div:hover,
 [data-testid="stSidebar"] div[data-baseweb="select"] > div:focus-within {
