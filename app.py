@@ -26,6 +26,9 @@ from src.ui_style import inject_css, metric_grid, render_hero, section_heading, 
 
 
 PROJECT_DIR = Path(__file__).resolve().parent
+REGION_LEVEL_OPTIONS = ["全国", "按省份", "按地市", "按县区"]
+DEFAULT_REGION_LEVEL = "按省份"
+DEFAULT_PROVINCE = "内蒙古自治区"
 
 
 def _format_number(value: Any, digits: int = 3) -> str:
@@ -128,8 +131,8 @@ def _region_controls(frame: pd.DataFrame) -> tuple[str, dict[str, str]]:
 
     level = st.sidebar.selectbox(
         "地区范围 / REGION",
-        ["全国", "按省份", "按地市", "按县区"],
-        index=0,
+        REGION_LEVEL_OPTIONS,
+        index=REGION_LEVEL_OPTIONS.index(DEFAULT_REGION_LEVEL),
     )
     selection: dict[str, str] = {}
     working = frame
@@ -140,7 +143,12 @@ def _region_controls(frame: pd.DataFrame) -> tuple[str, dict[str, str]]:
         provinces = sorted(working["province"].dropna().astype(str).unique())
         if not provinces:
             return "全国", {}
-        selection["province"] = st.sidebar.selectbox("选择省份", provinces)
+        default_province_index = (
+            provinces.index(DEFAULT_PROVINCE) if DEFAULT_PROVINCE in provinces else 0
+        )
+        selection["province"] = st.sidebar.selectbox(
+            "选择省份", provinces, index=default_province_index
+        )
         working = working.loc[working["province"].astype(str) == selection["province"]]
     if level in {"按地市", "按县区"}:
         if "city" not in working.columns:

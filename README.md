@@ -8,6 +8,24 @@
 
 建议使用 Python 3.10—3.12：
 
+### 一键启动（推荐用于汇报演示）
+
+在 Windows 资源管理器中进入 `regional_potential_lab/`，双击：
+
+```text
+start_local_app.bat
+```
+
+脚本会自动创建 `.venv`、安装 `requirements.txt`，并打开：
+
+```text
+http://127.0.0.1:8501
+```
+
+首次运行需要安装 GeoPandas、PySAL 等依赖，时间会比较久；后续启动会复用 `.venv` 并跳过重复安装。为了降低初次打开地图的压力，网页默认按省份筛选并显示“内蒙古自治区”，需要全国视图时可在左侧栏切回“全国”。
+
+### 手动启动
+
 ```powershell
 cd regional_potential_lab
 python -m venv .venv
