@@ -78,12 +78,21 @@ Render 通常会自动关联对应的 `www` 子域名跳转关系。添加后先
 
 ## 5. 数据说明
 
-当前 GitHub 仓库不包含大体积 `outputs/real_data_v2` 和旧版 `outputs/processed` 结果。线上应用默认使用 `sample/` 示例数据跑通完整页面。
+当前 GitHub 私仓已包含 `data/` 下的 app-ready 真实县域数据，Render / Railway 默认读取这套数据，正常情况下应显示 2891 个县域边界和 2019、2024 两期指标，而不是 `sample/` 的 12 个虚构网格。
 
-如需线上读取真实数据，有两种方式：
+`outputs/real_data_v2` 和旧版 `outputs/processed` 仍不提交到仓库；它们只作为本地处理结果和报告归档。若后续重新处理真实数据，请先输出到 `outputs/real_data_v2/app_data/`，确认无误后再把以下 9 个 app-ready 文件同步到 `data/`：
 
-1. 在网页侧栏上传 CSV/GeoJSON 文件；
-2. 将真实数据文件提交到 `data/`，但这会把数据放入私仓和部署包，需确认数据版权、隐私与体积。
+- `county_boundary.geojson`
+- `nightlight_2019.csv`
+- `nightlight_2024.csv`
+- `population_2019.csv`
+- `population_2024.csv`
+- `road_2019.csv`
+- `road_2024.csv`
+- `economy_2019.csv`
+- `economy_2024.csv`
+
+如果线上仍出现 `北澜省 / 中岳省 / 南川省` 或 12 个方格边界，说明当前部署包没有读到 `data/` 中的真实 CSV / GeoJSON，应用已经回退到了 `sample/` 示例数据。此时请检查 GitHub 最新提交是否包含 `data/county_boundary.geojson`，并在 Render 执行 `Manual Deploy -> Clear build cache & deploy`。
 
 ## 6. 常见问题
 

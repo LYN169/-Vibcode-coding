@@ -49,7 +49,7 @@ streamlit run app.py
 GitHub 私有仓库 -> Render Singapore -> Cloudflare -> regional-potential-lab.com
 ```
 
-没有真实数据时，应用会自动读取 `sample/` 中的 12 个虚构县区，直接展示完整页面闭环。
+当前私仓已在 `data/` 内置 app-ready 真实县域数据，Render / Railway 部署后会默认读取 2891 个县域边界与 2019、2024 两期指标表。只有当 `data/` 中没有任何 CSV / GeoJSON 且未配置可用的处理后数据目录时，应用才会自动回退到 `sample/` 中的 12 个虚构县区。
 
 `requirements.txt` 已包含线上部署所需的空间统计依赖，因此 Render / Railway 默认构建后应可直接运行 Moran's I 与 LISA。本地如果只想安装轻量基础依赖，可自行临时移除 `libpysal` 和 `esda`；也可以单独安装空间依赖：
 
@@ -92,7 +92,7 @@ data/economy_2024.csv
 python scripts/process_real_data.py --output-root outputs/real_data_v2
 ```
 
-脚本不会修改原始文件。当前 V2 的主结果、诊断报告和空间分析结果统一输出到 `outputs/real_data_v2/`，网页应用数据位于 `outputs/real_data_v2/app_data/`。网页在项目 `data/` 没有真实 CSV/GeoJSON 时，会按 `config/data_sources.json` 自动读取该目录，因此当前默认数据源为 V2 真实标准化数据而不是 sample。旧版 `outputs/processed/` 仅保留用于结果对照，不参与 V2 计算。
+脚本不会修改原始文件。当前 V2 的主结果、诊断报告和空间分析结果统一输出到 `outputs/real_data_v2/`，网页应用数据位于 `outputs/real_data_v2/app_data/`。为保证 Render 等线上环境无需访问本机 `E:/Housework/...` 路径即可显示真实县域边界，当前已将 `outputs/real_data_v2/app_data/` 中的 9 个 app-ready 文件同步复制到 `data/`。旧版 `outputs/processed/` 仅保留用于结果对照，不参与 V2 计算。
 
 经济源表同时支持两种结构：旧宽表（`gdp_2019`、`gdp_2024`）和新长表（`county_code`、`year`、`gdp`、`gdp_per_capita`、`gdp_density`）。长表必须保证 `county_code + year` 唯一；无法解析的数值继续保留为 NA。
 
