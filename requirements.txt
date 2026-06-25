@@ -6,3 +6,8 @@ folium>=0.16
 streamlit-folium>=0.22
 plotly>=5.20
 
+# Spatial diagnostics used by Moran's I and LISA.
+# The app can fall back when these are unavailable, but hosted deployments
+# should install them so spatial analysis works online.
+libpysal>=4.10
+esda>=2.5

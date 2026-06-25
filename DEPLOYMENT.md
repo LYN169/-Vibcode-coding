@@ -89,11 +89,31 @@ Render 通常会自动关联对应的 `www` 子域名跳转关系。添加后先
 
 ### 构建失败
 
-优先检查 Render logs。GeoPandas 依赖较重，Free 实例可能构建慢或内存不足。可尝试：
+优先检查 Render logs。GeoPandas / PySAL / esda 依赖较重，Free 实例可能构建慢或内存不足。可尝试：
 
 - 升级 Render Starter；
-- 临时移除 `requirements-spatial.txt` 中的 PySAL 空间分析依赖；
+- 如果只需要地图和指标、暂时不需要 Moran's I / LISA，可临时移除 `requirements.txt` 中的 `libpysal` 和 `esda`，空间分析会自动降级为“暂不可用”；
 - 使用 Railway 备用部署。
+
+### 线上提示 `No module named 'esda'`
+
+说明 Render 当前构建没有安装空间分析依赖。常见原因是手动创建 Web Service 时只用了旧版 `requirements.txt`，或服务创建早于空间依赖并入主依赖。
+
+处理方式：
+
+1. 确认最新代码已经包含 `requirements.txt` 中的 `libpysal` 和 `esda`。
+2. 在 Render 服务页面点击 **Manual Deploy** → **Clear build cache & deploy**。
+3. 如果你没有使用 Blueprint，请把 Build Command 至少设置为：
+
+```bash
+pip install --upgrade pip && pip install -r requirements.txt
+```
+
+Blueprint 方式仍可保留：
+
+```bash
+pip install --upgrade pip && pip install -r requirements.txt && pip install -r requirements-spatial.txt
+```
 
 ### 页面能打开但地图不显示
 

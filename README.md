@@ -51,13 +51,13 @@ GitHub 私有仓库 -> Render Singapore -> Cloudflare -> regional-potential-lab.
 
 没有真实数据时，应用会自动读取 `sample/` 中的 12 个虚构县区，直接展示完整页面闭环。
 
-空间统计是可选功能。需要 Moran's I 与 LISA 时额外安装：
+`requirements.txt` 已包含线上部署所需的空间统计依赖，因此 Render / Railway 默认构建后应可直接运行 Moran's I 与 LISA。本地如果只想安装轻量基础依赖，可自行临时移除 `libpysal` 和 `esda`；也可以单独安装空间依赖：
 
 ```powershell
 python -m pip install -r requirements-spatial.txt
 ```
 
-如果 PySAL 未安装、有效样本少于 4、指标为常数或空间权重失败，页面仅显示“空间分析暂不可用”，地图、指标、对比和导出继续运行。
+如果 PySAL / esda 未安装、有效样本少于 4、指标为常数或空间权重失败，页面仅显示“空间分析暂不可用”，地图、指标、对比和导出继续运行。
 
 ## 接入真实数据
 
