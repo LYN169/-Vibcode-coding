@@ -16,6 +16,24 @@ python -m pip install -r requirements.txt
 streamlit run app.py
 ```
 
+## 界面预览
+
+首页、侧栏控制与综合潜力地图：
+
+![Regional Potential Lab 首页与侧栏](docs/screenshots/01_home_sidebar.png)
+
+综合潜力指数地图：
+
+![综合潜力指数地图](docs/screenshots/02_potential_map.png)
+
+夜间灯光空间分布图：
+
+![夜间灯光空间分布图](docs/screenshots/03_nightlight_map.png)
+
+透明渐变图例细节：
+
+![透明渐变图例](docs/screenshots/04_transparent_legend.png)
+
 ## 在线部署
 
 本仓库已包含 Render / Railway 部署配置：
