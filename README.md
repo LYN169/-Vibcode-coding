@@ -16,6 +16,21 @@ python -m pip install -r requirements.txt
 streamlit run app.py
 ```
 
+## 在线部署
+
+本仓库已包含 Render / Railway 部署配置：
+
+- `render.yaml`：主部署方案，Render Singapore Web Service。
+- `railway.json`：Railway Singapore 备用方案。
+- `.streamlit/config.toml`：线上 Streamlit 基础配置。
+- `DEPLOYMENT.md`：GitHub 私仓、Render、Railway 与 Cloudflare 自定义域名部署步骤。
+
+当前建议链路为：
+
+```text
+GitHub 私有仓库 -> Render Singapore -> Cloudflare -> regional-potential-lab.com
+```
+
 没有真实数据时，应用会自动读取 `sample/` 中的 12 个虚构县区，直接展示完整页面闭环。
 
 空间统计是可选功能。需要 Moran's I 与 LISA 时额外安装：
