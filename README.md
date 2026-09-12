@@ -1,22 +1,57 @@
-# Vibcode Coding · 课程与研究工具集
+# Vibcode Coding · 从研究想法到可运行工具
 
-分享用代码实现研究与课程想法的过程，提供源码、案例资源和复刻说明。
+围绕文献整理、区域分析和空间规划，把课程与研究中的具体问题做成可以操作的网页工具。这里提供运行画面、项目介绍和完整源码，方便体验、讨论与复刻。
 
-## 项目分类
+**[查看完整图文介绍与演示顺序](docs/showcase/README.md)**
 
-| 分类 | 项目 | 源码入口 | 在线体验 |
-| --- | --- | --- | --- |
-| 区域经济与空间分析 | Regional Potential Lab：县域经济潜力与空间错配诊断 | 本仓库根目录，见下方原项目说明 | 见 [部署说明](DEPLOYMENT.md) |
-| 文献研究 | Papers Analyzer：文献导入、筛选、统计和导出 | [projects/research/papers-analyzer](projects/research/papers-analyzer) | [打开工具](https://bib-analysis-tool.vercel.app) |
-| 国土空间规划 | 武功镇国土空间规划三维可视地图 | [projects/spatial/wugong-territorial-planning](projects/spatial/wugong-territorial-planning) | [打开地图](https://wugong-sc-datav.vercel.app/sc-datav/#/wugong) |
+## 项目导航
 
-两个新增项目各自包含 README、源码、部署配置和许可证。2026-09-12 从作者当前项目整理；Papers Analyzer 的 HTML 已与线上版本逐字比对一致。武功镇项目提供当前本地源码和案例资源，验证结果见 [发布记录](docs/releases/2026-09-12-two-tools.md)。
+| 方向 | 项目 | 体验与源码 |
+| --- | --- | --- |
+| 文献研究 | Papers Analyzer · 文献分析工具 | [在线体验](https://bib-analysis-tool.vercel.app) · [源码](projects/research/papers-analyzer) |
+| 国土空间规划 | 武功镇规划可视地图 | [在线体验](https://wugong-sc-datav.vercel.app/sc-datav/#/wugong) · [源码](projects/spatial/wugong-territorial-planning) |
+| 区域经济与空间分析 | Regional Potential Lab · 县域经济潜力与空间错配诊断 | [运行说明](#regional-potential-lab) · 本仓库根目录 |
 
-原有 Regional Potential Lab 保持在根目录，原部署路径继续有效。部署新增项目时，请把对应项目子目录设置为平台的 Root Directory，不要把仓库根目录当作新增项目的入口。
+## 01 · 文献研究：看清一组文献的结构
 
-新增项目的代码许可见各自 LICENSE；第三方资源与数据保留各自权利。原有项目的许可范围未在此次整理中变更。
+**Papers Analyzer** 将文献文件转成可检索的条目、年份与期刊统计、关键词词云和时间线。适合文献初筛、开题准备和组会资料整理，筛选后可导出到后续阅读流程。
+
+![Papers Analyzer 运行画面：文献统计、关键词词云与筛选表格](docs/showcase/papers-overview.png)
+
+*2026-09-12 线上实截；已加载内置 55 篇“光伏+”Demo 文献。所有数值描述该示例文献集。*
+
+[查看时间线与操作介绍 →](docs/showcase/README.md#01--papers-analyzer让文献集合可以被浏览与比较)
+
+## 02 · 空间规划：把图纸、指标与现状放到一起讲
+
+**武功镇国土空间规划可视地图** 将 GIS 用地、道路、规划指标与景点资源组织成三维大屏。规划展示用于说明方案结构；现状概况用于展示卫星底图、景观资源和现状条件。
+
+![武功镇规划大屏运行画面：三维用地与现状—规划指标比较](docs/showcase/wugong-planning.png)
+
+*2026-09-12 线上实截；当前为“规划展示”模式，画面可切换至“现状概况”。*
+
+[查看卫星底图与景观资源导览 →](docs/showcase/README.md#02--武功镇国土空间规划把方案图纸变成可交互的展示)
+
+## 03 · 区域分析：在地图上比较县域发展差异
+
+**Regional Potential Lab** 联合经济、人口与交通指标，提供县域潜力评分、空间错配诊断、2019/2024 跨期比较与结果导出。对缺失数据保留标记，便于理解分析结果的适用范围。
+
+![Regional Potential Lab 运行画面：分析侧栏与空间地图](docs/screenshots/01_home_sidebar.png)
+
+*仓库已有运行截图，保存于 2026-06-25；本次未确认其线上可用性，演示建议按下方说明本地启动。*
+
+[查看地图与分析流程 →](docs/showcase/README.md#03--regional-potential-lab从多项指标理解县域差异)
+
+## 复刻与项目状态
+
+两个新增工具分别包含运行、部署和数据替换说明。新增项目代码许可见各自 LICENSE，第三方素材与数据保留各自权利；本次未改变原有根目录项目的许可范围。
+
+原有县域平台保留在仓库根目录，两个工具位于 `projects/` 下。部署时将对应子目录设为 Root Directory。项目仍有待完善事项，详见各 README 和 [开源整理记录](docs/releases/2026-09-12-two-tools.md)。
 
 ---
+
+<details>
+<summary><strong>Regional Potential Lab · 展开运行、数据与技术说明</strong></summary>
 
 # Regional Potential Lab
 
@@ -217,3 +252,5 @@ python -m unittest discover -s tests -v
 python -m compileall app.py src tests
 streamlit run app.py
 ```
+
+</details>
