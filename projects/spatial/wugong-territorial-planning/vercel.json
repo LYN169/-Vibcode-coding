@@ -1,0 +1,12 @@
+{
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/sc-datav/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/sc-datav/data/:path*", "destination": "/data/:path*" },
+    { "source": "/sc-datav/styles/:path*", "destination": "/styles/:path*" },
+    { "source": "/sc-datav/textures/:path*", "destination": "/textures/:path*" },
+    { "source": "/sc-datav/font/:path*", "destination": "/font/:path*" },
+    { "source": "/sc-datav/:path*", "destination": "/index.html" },
+    { "source": "/", "destination": "/index.html" }
+  ]
+}

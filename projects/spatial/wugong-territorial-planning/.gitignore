@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.vercel/
+.env
+.env.*
+!.env.example
+*.log
+*.tsbuildinfo
+.DS_Store
+public/data_mock_backup_20260524_201832/

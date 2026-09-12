@@ -1,0 +1,15 @@
+Wugong Territorial Planning Visualization
+
+Based on Knight-L/sc-datav (https://github.com/knight-L/sc-datav).
+Upstream source directory identifies revision c1aebf1.
+The upstream Apache License 2.0 is preserved in LICENSE.
+
+Modifications by LYN169 include Wugong planning and tourism pages,
+GIS data integration, layer controls, indicators and deployment packaging.
+Repository packaging and reproduction documentation added on 2026-09-12.
+The public-data build plugin now embeds structured text only and escapes
+HTML delimiters; binary textures remain separate public assets.
+The Vite base URL is aligned with the existing /sc-datav/ resource paths.
+
+Third-party libraries and assets retain their respective rights.
+See docs/DATA_AND_ASSETS.md for the scope of the included case resources.

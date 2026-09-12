@@ -1,0 +1,731 @@
+{
+  "regionName": "武功镇国土空间规划片区",
+  "displayTitle": "武功镇国土空间总体规划数字大屏",
+  "location": {
+    "province": "陕西省",
+    "city": "咸阳市",
+    "county": "武功县",
+    "town": "武功镇",
+    "description": "位于陕西省关中平原腹地、咸阳市西部、武功县西北部，处在西安都市圈西翼与杨凌示范区辐射交汇带。"
+  },
+  "planning": {
+    "planName": "咸阳市武功镇国土空间总体规划",
+    "planningPeriod": "2026-2040",
+    "baseYear": 2025,
+    "targetYear": 2040,
+    "scope": "武功镇镇区范围",
+    "areaM2": 3832525.56,
+    "areaHa": 383.25,
+    "areaKm2": 3.8325,
+    "areaMu": 5748.79,
+    "coreConcepts": [
+      "文化引领",
+      "产业协同",
+      "空间提质"
+    ],
+    "overallGoal": "武功镇定位为武功县县域副中心城镇。立足镇域深厚的历史文化底蕴、扎实的农业本底及优越的区位生态条件，武功镇将秉持“以历史文化传承为核心、以文旅融合为特色、以现代农业为支撑、以宜居品质为导向、以绿色生态为底线”的发展理念。通过优化空间布局、强化文化遗产保护与风貌塑造、完善公服与基础设施配套，全面推动文化展示、旅游休闲、特色商业与现代农业复合协同发展，最终将其建设成为特色鲜明、功能完善、产镇融合、宜居宜业的现代化复合型特色镇区，充分发挥其综合服务与辐射带动作用，有力支撑区域农业现代化与周边乡村振兴。",
+    "strategicPositioning": [
+      "历史文化传承镇",
+      "文旅融合特色镇",
+      "现代农业示范镇",
+      "宜居宜业品质镇",
+      "生态绿色发展镇",
+      "武功县县域副中心"
+    ]
+  },
+  "regionalContext": {
+    "overview": "武功镇处于关中平原农耕腹地与西安都市圈西翼的复合节点，兼具交通通道、农科协同、农业电商与历史文化叠合优势，是连接杨凌示范区、县域乡村与关中文旅网络的重要门户型镇区。",
+    "regionalRole": [
+      "县域西向门户",
+      "农科成果承接点",
+      "农业与文旅协同节点",
+      "历史文化展示窗口"
+    ],
+    "externalConnections": [
+      "西安都市圈",
+      "杨凌示范区",
+      "宝鸡方向",
+      "渭河流域农业带"
+    ],
+    "transportBasis": [
+      "陇海铁路",
+      "连霍高速",
+      "徐兰高铁",
+      "西安—咸阳—杨凌—宝鸡东西向联系轴"
+    ]
+  },
+  "naturalBase": {
+    "climate": {
+      "type": "暖温带季风半湿润气候",
+      "features": [
+        "四季分明",
+        "热量与光照条件较好",
+        "夏季高温和高辐射特征突出",
+        "镇区局部热岛集聚"
+      ],
+      "planningImplication": "未来应统筹通风、绿地、蓝网与建设布局优化。"
+    },
+    "terrain": {
+      "generalPattern": "整体地势西北高、东南低，以平缓台地为主。",
+      "elevationProfile": {
+        "northwestM": 490,
+        "middleM": 445,
+        "southeastM": 430
+      },
+      "suitability": "中部区域为主要城镇建设与农业发展适宜区，西部与北部边缘分布陡坡生态敏感区。"
+    },
+    "hydrologyEcology": {
+      "basin": "渭河流域漆水河水系",
+      "mainRiver": "漆水河",
+      "landscapeAxes": {
+        "mainAxis": "漆水河景观带",
+        "secondaryAxes": [
+          "西侧生态景观带",
+          "东侧生态景观带"
+        ]
+      },
+      "ecologicalZones": [
+        {
+          "name": "水系周围生态区",
+          "sharePercent": 15,
+          "function": "滨水生态核心区，承担水源涵养、生物栖息功能"
+        },
+        {
+          "name": "武功镇内其他生态区",
+          "sharePercent": 18,
+          "function": "城镇西侧、南侧生态缓冲带"
+        },
+        {
+          "name": "水系周围农田生态区",
+          "sharePercent": 12,
+          "function": "分布在水系与城镇之间的农田生态空间"
+        }
+      ],
+      "summary": "以漆水河为核心生态骨架，形成贯穿镇区的水系廊道与景观轴线，初步构建水、田、镇相互依托的生态格局。"
+    }
+  },
+  "population": {
+    "dataLevel": "武功县公开数据替代，武功镇缺少同口径公开年龄结构、性别结构与城镇化率连续统计。",
+    "currentTownPopulation": null,
+    "plannedTownPopulation": null,
+    "countyProxy": {
+      "sexRatio2020": 100.39,
+      "malePopulation2020": 159173,
+      "femalePopulation2020": 158560,
+      "agingRatio2020Percent": 23.44,
+      "age65PlusRatio2020Percent": 16.78,
+      "urbanizationRate2024Percent": 42.85,
+      "urbanizationIncreaseSince2000PctPoints": 25.93,
+      "residentPopulationChange2021To2024Wan": -0.98,
+      "urbanResidentPopulationIncrease2021To2024Wan": 0.97
+    },
+    "trendSummary": "县域人口总量趋降、镇区人口流失明显、老龄化加深，产业与公共服务对人口留存和回流形成支撑。"
+  },
+  "industryEconomy": {
+    "dataLevel": "县级口径为主，镇域层面以农业、古镇文化与旅游服务功能判断为主。",
+    "industryStructure2024Percent": {
+      "primary": 14.2,
+      "secondary": 29.1,
+      "tertiary": 56.7
+    },
+    "countyEconomicIndicators": {
+      "gdp2023HundredMillionYuan": 200.23,
+      "gdp2024HundredMillionYuan": 211.07,
+      "retailSales2023HundredMillionYuan": 108.8,
+      "retailSales2024HundredMillionYuan": 118.31,
+      "localFiscalRevenue2023HundredMillionYuan": 1.7,
+      "localFiscalRevenue2024HundredMillionYuan": 1.89,
+      "fixedAssetInvestmentGrowth2023Percent": 8.8,
+      "fixedAssetInvestmentGrowth2024Percent": 17.3,
+      "industrialValueAddedGrowth2023Percent": 10.0,
+      "industrialValueAddedGrowth2024Percent": 13.5
+    },
+    "townIndustryFeatures": [
+      "文旅服务和商贸消费较为突出",
+      "依托武功古镇、后稷文化艺术节和河滩古会形成旅游观光、文化体验、餐饮购物和节会消费复合体系",
+      "中部商贸生活服务核心区集聚度较高",
+      "部分区域叠加食品加工、生物医药、机械维修等功能"
+    ],
+    "developmentDirection": "突出农业强基、电商赋能、文旅增值，推动猕猴桃等特色果业向种植、分拣、包装、销售与农旅体验链条延伸。"
+  },
+  "currentLanduse": {
+    "dataYear": 2025,
+    "totalAreaM2": 3832525.56,
+    "categories": [
+      {
+        "code": "01",
+        "name": "耕地",
+        "areaM2": 874847.61,
+        "sharePercent": 22.77,
+        "subTypes": [
+          {
+            "code": "0102",
+            "name": "水浇地",
+            "areaM2": 565316.45,
+            "sharePercent": 14.72
+          },
+          {
+            "code": "0103",
+            "name": "旱地",
+            "areaM2": 309531.16,
+            "sharePercent": 8.06
+          }
+        ]
+      },
+      {
+        "code": "02",
+        "name": "园地",
+        "areaM2": 45568.77,
+        "sharePercent": 1.19,
+        "subTypes": [
+          {
+            "code": "0205",
+            "name": "其他园地",
+            "areaM2": 45568.77,
+            "sharePercent": 1.19
+          }
+        ]
+      },
+      {
+        "code": "03",
+        "name": "林地",
+        "areaM2": 794449.5,
+        "sharePercent": 20.68,
+        "subTypes": [
+          {
+            "code": "0301",
+            "name": "乔木林地",
+            "areaM2": 761083.23,
+            "sharePercent": 19.81
+          },
+          {
+            "code": "0303",
+            "name": "灌木林地",
+            "areaM2": 497.49,
+            "sharePercent": 0.01
+          },
+          {
+            "code": "0304",
+            "name": "其他林地",
+            "areaM2": 32868.78,
+            "sharePercent": 0.86
+          }
+        ]
+      },
+      {
+        "code": "05",
+        "name": "湿地",
+        "areaM2": 11192.39,
+        "sharePercent": 0.29,
+        "subTypes": [
+          {
+            "code": "0506",
+            "name": "内陆滩涂",
+            "areaM2": 11192.39,
+            "sharePercent": 0.29
+          }
+        ]
+      },
+      {
+        "code": "06",
+        "name": "农业设施建设用地",
+        "areaM2": 96733.89,
+        "sharePercent": 2.52,
+        "subTypes": [
+          {
+            "code": "0601",
+            "name": "农村道路",
+            "areaM2": 90631.58,
+            "sharePercent": 2.36
+          },
+          {
+            "code": "0603",
+            "name": "畜禽养殖设施建设用地",
+            "areaM2": 6102.31,
+            "sharePercent": 0.16
+          }
+        ]
+      },
+      {
+        "code": "07",
+        "name": "居住用地",
+        "areaM2": 828235.7,
+        "sharePercent": 21.56,
+        "subTypes": [
+          {
+            "code": "0701",
+            "name": "城镇住宅用地",
+            "areaM2": 478222.36,
+            "sharePercent": 12.45
+          },
+          {
+            "code": "0702",
+            "name": "城镇社区服务设施用地",
+            "areaM2": 1461.24,
+            "sharePercent": 0.04
+          },
+          {
+            "code": "0703",
+            "name": "农村宅基地",
+            "areaM2": 337119.78,
+            "sharePercent": 8.78
+          },
+          {
+            "code": "0704",
+            "name": "农村社区服务设施用地",
+            "areaM2": 11432.32,
+            "sharePercent": 0.3
+          }
+        ]
+      },
+      {
+        "code": "08",
+        "name": "公共管理与公共服务用地",
+        "areaM2": 178641.8,
+        "sharePercent": 4.65,
+        "subTypes": [
+          {
+            "code": "0801",
+            "name": "机关团体用地",
+            "areaM2": 60333.41,
+            "sharePercent": 1.57
+          },
+          {
+            "code": "0803",
+            "name": "文化用地",
+            "areaM2": 4241.84,
+            "sharePercent": 0.11
+          },
+          {
+            "code": "0804",
+            "name": "教育用地",
+            "areaM2": 85683.74,
+            "sharePercent": 2.23
+          },
+          {
+            "code": "0806",
+            "name": "医疗卫生用地",
+            "areaM2": 28382.82,
+            "sharePercent": 0.74
+          }
+        ]
+      },
+      {
+        "code": "09",
+        "name": "商业服务业用地",
+        "areaM2": 251961.49,
+        "sharePercent": 6.56,
+        "subTypes": [
+          {
+            "code": "0901",
+            "name": "商业用地",
+            "areaM2": 205719.37,
+            "sharePercent": 5.35
+          },
+          {
+            "code": "0904",
+            "name": "其他商业服务业用地",
+            "areaM2": 46242.12,
+            "sharePercent": 1.2
+          }
+        ]
+      },
+      {
+        "code": "10",
+        "name": "工矿用地",
+        "areaM2": 87970.02,
+        "sharePercent": 2.29,
+        "subTypes": [
+          {
+            "code": "1001",
+            "name": "工业用地",
+            "areaM2": 87970.02,
+            "sharePercent": 2.29
+          }
+        ]
+      },
+      {
+        "code": "12",
+        "name": "交通运输用地",
+        "areaM2": 275224.75,
+        "sharePercent": 7.16,
+        "subTypes": [
+          {
+            "code": "1202",
+            "name": "公路用地",
+            "areaM2": 118474.77,
+            "sharePercent": 3.08
+          },
+          {
+            "code": "1207",
+            "name": "城镇村道路用地",
+            "areaM2": 113131.11,
+            "sharePercent": 2.94
+          },
+          {
+            "code": "1208",
+            "name": "交通场站用地",
+            "areaM2": 43618.87,
+            "sharePercent": 1.14
+          }
+        ]
+      },
+      {
+        "code": "13",
+        "name": "公用设施用地",
+        "areaM2": 5525.85,
+        "sharePercent": 0.14,
+        "subTypes": [
+          {
+            "code": "1303",
+            "name": "供电用地",
+            "areaM2": 5161.58,
+            "sharePercent": 0.13
+          },
+          {
+            "code": "1307",
+            "name": "邮政用地",
+            "areaM2": 364.27,
+            "sharePercent": 0.01
+          }
+        ]
+      },
+      {
+        "code": "14",
+        "name": "绿地与开敞空间用地",
+        "areaM2": 236011.0,
+        "sharePercent": 6.14,
+        "subTypes": [
+          {
+            "code": "1401",
+            "name": "公园绿地",
+            "areaM2": 19205.01,
+            "sharePercent": 0.5
+          },
+          {
+            "code": "1402",
+            "name": "防护绿地",
+            "areaM2": 121302.62,
+            "sharePercent": 3.16
+          },
+          {
+            "code": "1403",
+            "name": "广场用地",
+            "areaM2": 95503.37,
+            "sharePercent": 2.49
+          }
+        ]
+      },
+      {
+        "code": "15",
+        "name": "特殊用地",
+        "areaM2": 47023.94,
+        "sharePercent": 1.22,
+        "subTypes": [
+          {
+            "code": "1503",
+            "name": "宗教用地",
+            "areaM2": 16097.69,
+            "sharePercent": 0.42
+          },
+          {
+            "code": "1504",
+            "name": "文物古迹用地",
+            "areaM2": 30926.26,
+            "sharePercent": 0.81
+          }
+        ]
+      },
+      {
+        "code": "17",
+        "name": "陆地水域",
+        "areaM2": 52832.09,
+        "sharePercent": 1.38,
+        "subTypes": [
+          {
+            "code": "1701",
+            "name": "河流水面",
+            "areaM2": 52832.09,
+            "sharePercent": 1.38
+          }
+        ]
+      },
+      {
+        "code": "23",
+        "name": "其他土地",
+        "areaM2": 55525.5,
+        "sharePercent": 1.45,
+        "subTypes": [
+          {
+            "code": "2301",
+            "name": "空闲地",
+            "areaM2": 27567.45,
+            "sharePercent": 0.72
+          },
+          {
+            "code": "2306",
+            "name": "裸土地",
+            "areaM2": 27958.05,
+            "sharePercent": 0.73
+          }
+        ]
+      }
+    ],
+    "keyFindings": [
+      "居住用地比例偏高，空间利用较粗放。",
+      "工矿产业用地占比偏低，经济引擎不足。",
+      "公共管理与公共服务用地不足，配套历史欠账较多。",
+      "绿地总量基本达标，但功能结构存在失衡。"
+    ]
+  },
+  "cultureTourism": {
+    "resourceBase": [
+      "省级历史文化名镇",
+      "陕西省旅游特色名镇",
+      "后稷文化",
+      "苏武文化",
+      "姜嫄文化",
+      "农耕文化",
+      "宗教文化",
+      "水利文化"
+    ],
+    "spatialPattern": "文旅资源呈东密西疏、核心集聚格局，整体表现为一核多片。",
+    "coreAreas": [
+      "武功古镇核心聚集区",
+      "城隍庙及古镇文旅集中区",
+      "苏武陵文旅集中区",
+      "姜嫄水乡文旅集中区",
+      "寺庙文化集中区"
+    ],
+    "culturalConcentrationZonesCount": 13,
+    "advantages": [
+      "文旅资源丰富",
+      "核心区集聚效应明显",
+      "功能分区初步形成",
+      "文化辨识度高"
+    ],
+    "problems": [
+      "空间分布不均衡",
+      "资源联动性弱",
+      "类型单一且同质化",
+      "服务设施配套滞后",
+      "面临袁家村及周边古镇竞争压力"
+    ],
+    "tourismDevelopmentSummary": "依托武功古镇、后稷文化艺术节和河滩古会等资源，已形成旅游观光、文化体验、餐饮购物和节会消费复合体系，但仍需强化线路组织、资源联动和服务设施补齐。"
+  },
+  "agriculture": {
+    "farmlandSharePercent": 22.77,
+    "irrigatedLandSharePercent": 14.72,
+    "dryLandSharePercent": 8.06,
+    "leadingProduct": "猕猴桃",
+    "features": [
+      "耕地占比稳定",
+      "水浇地比重较高",
+      "地势相对平坦",
+      "农田水利灌溉管网覆盖率较高",
+      "特色果蔬多元发展"
+    ],
+    "shortcomings": [
+      "农产品精深加工不足",
+      "配套产业承载不足",
+      "农业优势向产业优势和增值优势转化仍需提升"
+    ],
+    "developmentDirection": "推动现代农业、品牌农业、电商农业和农旅体验融合。"
+  },
+  "humanSettlement": {
+    "spatialPattern": "核心集聚、外围低密。",
+    "streetViewSampleCount": 130,
+    "features": [
+      "生态基底以农田、林地为主",
+      "居住空间以村庄、住宅为主体",
+      "镇区核心建设高度集中",
+      "外围区域低密分散",
+      "绿植占比较高"
+    ],
+    "problems": [
+      "开放空间薄弱",
+      "生态廊道缺失",
+      "街道品质分异明显",
+      "步行环境和公共空间活力不足",
+      "人本化与精细化建设仍需加强"
+    ],
+    "communityServiceIssue": "服务配套属性用地占比极低，城镇社区服务设施用地约0.04%，农村社区服务设施用地约0.30%，难以有效支撑15分钟社区生活圈。"
+  },
+  "infrastructure": {
+    "power": {
+      "status": "已接入区域骨干电网，武镇330千伏输电线路工程已投运。",
+      "attribute": "外部依托型",
+      "missingMetrics": [
+        "镇域供电可靠率",
+        "停电时长",
+        "重过载台区",
+        "老旧线路改造进度"
+      ]
+    },
+    "gas": {
+      "status": "具备天然气接入条件，依赖区域高压输气和县域统筹调配。",
+      "attribute": "外部依托型",
+      "missingMetrics": [
+        "居民接入率",
+        "年供气量",
+        "村庄天然气覆盖率",
+        "峰值保供能力"
+      ]
+    },
+    "sanitation": {
+      "status": "嵌入县域“村收集、企转运、镇监管、县处理”的生活垃圾收运处置体系。",
+      "attribute": "县域统筹型",
+      "countyFacility": "城镇生活垃圾集中压缩转运站设计日处理生活垃圾300吨，并转运至兴平市生活垃圾焚烧发电厂处理。",
+      "missingMetrics": [
+        "垃圾分类投放点数量",
+        "公厕数量",
+        "垃圾转运点数量",
+        "环卫停车场台账"
+      ]
+    },
+    "waterDrainage": {
+      "status": "已实施供水工程，新建供水厂3000m³/d，镇区污水处理厂已开展委托运营。",
+      "attribute": "镇域独立型",
+      "waterPlantCapacityM3PerDay": 3000,
+      "missingMetrics": [
+        "供水普及率",
+        "管网漏损率",
+        "污水收集率",
+        "雨污分流完成度",
+        "内涝风险点"
+      ]
+    },
+    "summary": "供排水相对独立建设，环卫以县域统筹和外部终端处置为主，电力与燃气以上位区域骨干系统支撑为主、镇域末端接入为辅。"
+  },
+  "transportation": {
+    "currentFeatures": [
+      "可达性呈中心优、南北劣的分布特征",
+      "道路密度呈核心集聚、边缘稀疏格局",
+      "路网骨架具有指向性但系统性偏弱"
+    ],
+    "problems": [
+      "空间资源分布不均",
+      "路网级配不合理",
+      "内部循环不畅",
+      "断头路与慢行系统有待优化"
+    ],
+    "planningSuggestion": "推行小街区、密路网模式，打通断头路，完善慢行系统和差异化交通供给。",
+    "plannedRoadLengthKm": null,
+    "currentRoadDensityKmPerKm2": null
+  },
+  "swot": {
+    "strengths": [
+      "区位节点突出，区域联系条件较好。",
+      "历史文化资源厚实，特色辨识度高。",
+      "农业基础较稳，特色产业支撑明确。",
+      "生态本底尚可，山水田镇格局初步形成。",
+      "基础设施已有一定建设基础。"
+    ],
+    "weaknesses": [
+      "空间结构失衡，建设用地配置不合理。",
+      "人居品质与建设强度不匹配。",
+      "文旅资源分布不均，联动能力偏弱。",
+      "公共服务覆盖存在短板。",
+      "绿色空间连续性不足，生态建设承压。"
+    ],
+    "opportunities": [
+      "西安都市圈与杨凌示范区协同带来外部赋能。",
+      "上位政策持续强化文化保护与绿色发展导向。",
+      "县域服务业增长与消费扩张形成外溢需求。",
+      "电商体系成熟为农业升级提供新路径。",
+      "县域副中心培育目标提供功能提升契机。"
+    ],
+    "threats": [
+      "周边成熟文旅目的地竞争压力较大。",
+      "人口外流与老龄化趋势加重发展压力。",
+      "生态保护与建设扩张矛盾可能加剧。",
+      "基础设施末端品质仍存在不确定性。",
+      "镇域综合服务能级仍不足以完全支撑升级目标。"
+    ],
+    "overallConclusion": "武功镇总体呈现文旅与农业本底扎实、区位协同潜力突出，但空间品质、服务能级与产业联动仍需提升的特征，应在功能布局优化、产业与设施建设、区域协同与内涵提质并进中塑造县域副中心功能。"
+  },
+  "dashboardCards": [
+    {
+      "title": "规划范围",
+      "value": 3.8325,
+      "unit": "km²",
+      "description": "武功镇镇区规划范围"
+    },
+    {
+      "title": "规划面积",
+      "value": 383.25,
+      "unit": "公顷",
+      "description": "折合约5748.79亩"
+    },
+    {
+      "title": "耕地占比",
+      "value": 22.77,
+      "unit": "%",
+      "description": "水浇地占14.72%，旱地占8.06%"
+    },
+    {
+      "title": "林地占比",
+      "value": 20.68,
+      "unit": "%",
+      "description": "以乔木林地为主"
+    },
+    {
+      "title": "居住用地占比",
+      "value": 21.56,
+      "unit": "%",
+      "description": "居住用地比例偏高"
+    },
+    {
+      "title": "公共服务用地占比",
+      "value": 4.65,
+      "unit": "%",
+      "description": "公共服务配套仍需补齐"
+    },
+    {
+      "title": "交通运输用地占比",
+      "value": 7.16,
+      "unit": "%",
+      "description": "路网系统性偏弱"
+    },
+    {
+      "title": "文旅文化集中区",
+      "value": 13,
+      "unit": "个",
+      "description": "已形成组团式文化资源格局"
+    },
+    {
+      "title": "街景采样点",
+      "value": 130,
+      "unit": "个",
+      "description": "用于人居环境语义识别"
+    },
+    {
+      "title": "县域城镇化率",
+      "value": 42.85,
+      "unit": "%",
+      "description": "2024年县级口径"
+    }
+  ],
+  "dataQuality": {
+    "notes": [
+      "人口、产业等部分指标为武功县公开数据替代，不是武功镇同口径数据。",
+      "现状用地数据来自PPT现状用地表，建议以后以前端实际 current_landuse.geojson 统计结果为准。",
+      "规划用地、规划道路、景点数量等应由已整理的 GeoJSON 和 CSV 再计算后回填。",
+      "SHAPE_Area 和 SHAPE_Length 不应直接作为真实面积长度展示，优先使用人工计算好的 area_mu、area_ha、length_km、length_m 字段。"
+    ],
+    "missingFields": [
+      "武功镇镇区现状常住人口、户籍人口、户数",
+      "2040年规划人口",
+      "镇区年龄结构、性别结构、劳动力人口等同口径数据",
+      "规划用地结构汇总表，包括各类规划用地面积与占比",
+      "现状建设用地总量与规划建设用地总量对比",
+      "规划道路总长度、道路等级长度、道路红线宽度统计",
+      "景点总数、文保点数量、景点等级分类、景点类型统计",
+      "公共服务设施数量与服务半径，包括教育、医疗、养老、文化、体育等",
+      "停车场、游客中心、公厕、驿站等旅游服务设施数量",
+      "供水普及率、污水收集率、垃圾收运覆盖率、燃气接入率、供电可靠率等镇域运行指标",
+      "现状及规划产业用地面积、就业岗位、产业产值等镇域产业数据",
+      "规划目标指标，例如新增绿地面积、人均公园绿地、道路网密度、慢行系统长度等"
+    ]
+  }
+}

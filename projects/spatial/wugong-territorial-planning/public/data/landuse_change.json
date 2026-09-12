@@ -1,0 +1,32 @@
+{
+  "title": "现状—规划用地结构变化",
+  "unit": "%",
+  "items": [
+    {"landuse": "耕地", "currentShare": 22.77, "plannedShare": 14.27, "change": -8.50},
+    {"landuse": "园地", "currentShare": 1.19, "plannedShare": 0, "change": -1.19},
+    {"landuse": "林地", "currentShare": 20.68, "plannedShare": 7.79, "change": -12.89},
+    {"landuse": "湿地", "currentShare": 0.29, "plannedShare": 0, "change": -0.29},
+    {"landuse": "农业设施建设用地", "currentShare": 2.52, "plannedShare": 0, "change": -2.52},
+    {"landuse": "居住用地", "currentShare": 21.56, "plannedShare": 30.02, "change": 8.46},
+    {"landuse": "公共管理与公共服务用地", "currentShare": 4.65, "plannedShare": 5.02, "change": 0.37},
+    {"landuse": "商业服务业用地", "currentShare": 6.56, "plannedShare": 6.43, "change": -0.13},
+    {"landuse": "工矿用地", "currentShare": 2.29, "plannedShare": 2.68, "change": 0.39},
+    {"landuse": "交通运输用地", "currentShare": 7.16, "plannedShare": 16.36, "change": 9.20},
+    {"landuse": "公用设施用地", "currentShare": 0.14, "plannedShare": 0.35, "change": 0.21},
+    {"landuse": "绿地与开敞空间用地", "currentShare": 6.14, "plannedShare": 13.19, "change": 7.05},
+    {"landuse": "特殊用地", "currentShare": 1.22, "plannedShare": 0.46, "change": -0.76},
+    {"landuse": "陆地水域", "currentShare": 1.38, "plannedShare": 1.86, "change": 0.48},
+    {"landuse": "其他土地", "currentShare": 1.45, "plannedShare": 0, "change": -1.45},
+    {"landuse": "仓储用地", "currentShare": 0, "plannedShare": 1.57, "change": 1.57}
+  ],
+  "topIncrease": [
+    {"landuse": "交通运输用地", "change": 9.20},
+    {"landuse": "居住用地", "change": 8.46},
+    {"landuse": "绿地与开敞空间用地", "change": 7.05}
+  ],
+  "topDecrease": [
+    {"landuse": "林地", "change": -12.89},
+    {"landuse": "耕地", "change": -8.50},
+    {"landuse": "农业设施建设用地", "change": -2.52}
+  ]
+}

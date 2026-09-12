@@ -1,0 +1,42 @@
+{
+  "layer": "planned_roads",
+  "matchField": "道路类",
+  "defaultFill": "#2b9600",
+  "defaultLine": "#666666",
+  "defaultOpacity": 0.75,
+  "defaultLineWidth": 2,
+  "categories": [
+    {
+      "value": "主干道",
+      "label": "主干道",
+      "fillColor": "#2b9600",
+      "lineColor": "#005ce6",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "支路",
+      "label": "支路",
+      "fillColor": "#2b9600",
+      "lineColor": "#000000",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "次干道",
+      "label": "次干道",
+      "fillColor": "#2b9600",
+      "lineColor": "#895a44",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "省道",
+      "label": "省道",
+      "fillColor": "#2b9600",
+      "lineColor": "#ffff00",
+      "opacity": 1.0,
+      "lineWidth": 2
+    }
+  ]
+}

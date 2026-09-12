@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>武功镇国土空间规划数字大屏 — 使用指南</title>
+<style>
+  :root { --bg:#f8fafc; --card:#fff; --ink:#1e293b; --muted:#64748b; --blue:#1e40af; --orange:#ea580c; --border:#e2e8f0; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family: system-ui,-apple-system,"Microsoft YaHei",sans-serif; background:var(--bg); color:var(--ink); line-height:1.7; }
+  .hero { background: linear-gradient(135deg,#0f172a 0%,#1e3a5f 100%); color:#fff; padding:60px 24px; text-align:center; }
+  .hero h1 { font-size:32px; margin-bottom:8px; }
+  .hero p { color:#94a3b8; font-size:16px; }
+  .container { max-width:900px; margin:0 auto; padding:0 24px; }
+  section { padding:40px 0; border-bottom:1px solid var(--border); }
+  h2 { font-size:24px; color:var(--blue); margin-bottom:16px; }
+  h3 { font-size:18px; color:var(--orange); margin:20px 0 8px; }
+  .card { background:var(--card); border-radius:10px; padding:20px; margin:16px 0; border:1px solid var(--border); box-shadow:0 1px 3px rgba(0,0,0,0.04); }
+  table { width:100%; border-collapse:collapse; margin:12px 0; }
+  th,td { padding:10px 14px; text-align:left; border-bottom:1px solid var(--border); font-size:14px; }
+  th { background:#f1f5f9; color:var(--muted); font-size:12px; text-transform:uppercase; }
+  ul,ol { padding-left:20px; margin:8px 0; }
+  li { margin:4px 0; }
+  code { background:#f1f5f9; padding:2px 6px; border-radius:4px; font-size:13px; }
+  .tip { background:#fff7ed; border-left:3px solid var(--orange); padding:12px 16px; border-radius:4px; margin:12px 0; font-size:14px; }
+  .qa { margin:12px 0; }
+  .qa .q { font-weight:600; color:var(--blue); }
+  .qa .a { color:var(--muted); margin-left:8px; }
+  footer { text-align:center; padding:32px; color:var(--muted); font-size:13px; }
+  @media print { .hero { padding:30px 24px; } section { padding:20px 0; page-break-inside:avoid; } }
+</style>
+</head>
+<body>
+<div class="hero">
+  <h1>武功镇国土空间规划数字大屏</h1>
+  <p>使用指南 · 2026-05-26</p>
+</div>
+
+<div class="container">
+
+<section>
+  <h2>1. 网页简介</h2>
+  <p>本网页是<strong>武功镇国土空间规划成果的三维数字大屏</strong>，用于规划成果展示、方案汇报、农文旅资源导览和用地结构对比。基于开源三维大屏框架开发，集成了武功镇真实 GIS 数据和 ArcGIS 配色方案，无需安装任何软件，浏览器直接打开即可使用。</p>
+</section>
+
+<section>
+  <h2>2. 访问方式</h2>
+  <div class="card">
+    <table>
+      <tr><th>方式</th><th>地址</th></tr>
+      <tr><td>线上访问</td><td><code>https://wugong-sc-datav.vercel.app</code></td></tr>
+      <tr><td>武功镇大屏</td><td><code>线上地址/#/wugong</code></td></tr>
+    </table>
+  </div>
+</section>
+
+<section>
+  <h2>3. 页面主要模式</h2>
+  <div class="card">
+    <h3>规划展示（默认模式）</h3>
+    <p>标题：<strong>武功镇国土空间规划（2026—2040）</strong><br>
+    默认显示规划用地、规划边界、左右信息面板。适用于规划方案展示、用地结构汇报、专家评审。</p>
+  </div>
+  <div class="card">
+    <h3>现状概况（景观资源导览）</h3>
+    <p>标题：<strong>武功镇景观资源导览</strong><br>
+    默认显示卫星底图、规划边界、景点点位。适用于农文旅资源展示、景点导览、区域概况介绍。</p>
+  </div>
+  <p>点击右上角 <strong>"规划展示" / "现状概况"</strong> 按钮切换。</p>
+</section>
+
+<section>
+  <h2>4. 主要交互说明</h2>
+  <table>
+    <tr><th>操作</th><th>方式</th></tr>
+    <tr><td>旋转视角</td><td>鼠标左键按住拖动</td></tr>
+    <tr><td>缩放地图</td><td>鼠标滚轮（前滚放大、后滚缩小）</td></tr>
+    <tr><td>拖拽平移</td><td>鼠标右键按住拖动</td></tr>
+    <tr><td>复位视角</td><td>点击底部工具栏第二个按钮（环形图标）</td></tr>
+    <tr><td>切换模式</td><td>点击右上角"规划展示/现状概况"</td></tr>
+    <tr><td>切换图层</td><td>点击底部图层控制按钮</td></tr>
+    <tr><td>查看用地信息</td><td>鼠标悬停到用地图斑或道路</td></tr>
+    <tr><td>查看景点详情</td><td>点击景点紫色圆点</td></tr>
+    <tr><td>隐藏信息框</td><td>点击底部第三个按钮（星星图标）</td></tr>
+  </table>
+  <div class="tip">隐藏面板不会影响底部的图层控制按钮和工具按钮。</div>
+</section>
+
+<section>
+  <h2>5. 图层说明</h2>
+  <table>
+    <tr><th>图层</th><th>内容</th><th>模式</th><th>样式</th></tr>
+    <tr><td>规划用地</td><td>规划土地利用地块</td><td>规划展示</td><td>多色填充</td></tr>
+    <tr><td>现状用地</td><td>现状土地利用地块</td><td>规划展示（可选）</td><td>多色填充</td></tr>
+    <tr><td>规划边界</td><td>规划范围</td><td>两种模式</td><td>红色点划线</td></tr>
+    <tr><td>规划道路</td><td>规划道路网络</td><td>规划展示（可选）</td><td>彩色线条</td></tr>
+    <tr><td>卫星底图</td><td>卫星影像</td><td>现状概况</td><td>真彩色影像</td></tr>
+    <tr><td>景点点位</td><td>38个文旅景点</td><td>现状概况</td><td>紫色发光圆点+名称</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>6. 汇报使用建议</h2>
+  <ol>
+    <li><strong>开场</strong>：规划展示模式，展示边界和用地布局</li>
+    <li><strong>用地变化</strong>：查看右下角"现状—规划用地对比"图表</li>
+    <li><strong>基础情况</strong>：切换到现状概况，展示区位、人口、产业</li>
+    <li><strong>文旅资源</strong>：点击景点查看详细介绍</li>
+    <li><strong>突出地图</strong>：点击星星按钮隐藏信息面板</li>
+  </ol>
+</section>
+
+<section>
+  <h2>7. 常见问题</h2>
+  <div class="qa"><p class="q">Q: 为什么有些图层默认关闭？</p><p class="a">为了画面清晰。规划道路和现状用地会遮挡信息，需要时手动开启。</p></div>
+  <div class="qa"><p class="q">Q: 为什么卫星底图只在现状概况出现？</p><p class="a">规划展示模式用彩色用地表示，卫星图会干扰颜色识别。</p></div>
+  <div class="qa"><p class="q">Q: 为什么规划用地和现状用地不同时显示？</p><p class="a">两套用地图层叠加会导致颜色混乱和画面闪烁。</p></div>
+  <div class="qa"><p class="q">Q: 点击景点显示"暂无详细介绍"？</p><p class="a">该景点在详情表中暂无对应文字，不影响点位显示。</p></div>
+</section>
+
+</div>
+<footer>武功镇国土空间规划数字大屏 · 使用指南 · 2026-05-26</footer>
+</body>
+</html>

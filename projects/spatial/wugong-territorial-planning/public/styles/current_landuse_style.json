@@ -1,0 +1,274 @@
+{
+  "layer": "current_landuse",
+  "matchField": "二级名",
+  "defaultFill": "#e3f2bf",
+  "defaultLine": "#666666",
+  "defaultOpacity": 0.75,
+  "defaultLineWidth": 2,
+  "categories": [
+    {
+      "value": "乔木林地",
+      "label": "乔木林地",
+      "fillColor": "#66d980",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "交通场站用地",
+      "label": "交通场站用地",
+      "fillColor": "#8c8c8c",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "供电用地",
+      "label": "供电用地",
+      "fillColor": "#598cbf",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "公园绿地",
+      "label": "公园绿地",
+      "fillColor": "#00ff19",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "公路用地",
+      "label": "公路用地",
+      "fillColor": "#d1cfc9",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "其他商业服务业用地",
+      "label": "其他商业服务业用地",
+      "fillColor": "#ff598a",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "其他园地",
+      "label": "其他园地",
+      "fillColor": "#d3ffbe",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "其他林地",
+      "label": "其他林地",
+      "fillColor": "#bff2cc",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "内陆滩涂",
+      "label": "内陆滩涂",
+      "fillColor": "#b3def8",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "农村宅基地",
+      "label": "农村宅基地",
+      "fillColor": "#ec898a",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "农村社区服务设施用地",
+      "label": "农村社区服务设施用地",
+      "fillColor": "#f2b3b3",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "农村道路",
+      "label": "农村道路",
+      "fillColor": "#cccccc",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "医疗卫生用地",
+      "label": "医疗卫生用地",
+      "fillColor": "#ff99ff",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "商业用地",
+      "label": "商业用地",
+      "fillColor": "#ff0019",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "城镇住宅用地",
+      "label": "城镇住宅用地",
+      "fillColor": "#e6787d",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "城镇村道路用地",
+      "label": "城镇村道路用地",
+      "fillColor": "#bfbfbf",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "城镇社区服务设施用地",
+      "label": "城镇社区服务设施用地",
+      "fillColor": "#eb8c8c",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "宗教用地",
+      "label": "宗教用地",
+      "fillColor": "#de6e8a",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "工业用地",
+      "label": "工业用地",
+      "fillColor": "#b38066",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "广场用地",
+      "label": "广场用地",
+      "fillColor": "#7f7f7f",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "教育用地",
+      "label": "教育用地",
+      "fillColor": "#ff73b3",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "文化用地",
+      "label": "文化用地",
+      "fillColor": "#bf598c",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "文物古迹用地",
+      "label": "文物古迹用地",
+      "fillColor": "#e65919",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "旱地",
+      "label": "旱地",
+      "fillColor": "#ffffcc",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "机关团体用地",
+      "label": "机关团体用地",
+      "fillColor": "#ff19ff",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "水浇地",
+      "label": "水浇地",
+      "fillColor": "#ffffa6",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "河流水面",
+      "label": "河流水面",
+      "fillColor": "#a6ffff",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "灌木林地",
+      "label": "灌木林地",
+      "fillColor": "#8cf299",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "畜禽养殖设施建设用地",
+      "label": "畜禽养殖设施建设用地",
+      "fillColor": "#f2d9a6",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "空闲地",
+      "label": "空闲地",
+      "fillColor": "#e1dce1",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "裸土地",
+      "label": "裸土地",
+      "fillColor": "#d7c8b9",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "邮政用地",
+      "label": "邮政用地",
+      "fillColor": "#19a3cc",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    },
+    {
+      "value": "防护绿地",
+      "label": "防护绿地",
+      "fillColor": "#008000",
+      "lineColor": "#6e6e6e",
+      "opacity": 1.0,
+      "lineWidth": 2
+    }
+  ]
+}

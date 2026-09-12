@@ -1,0 +1,55 @@
+current_landuse keys:
+  FID
+  OBJECTID_1
+  \u4e00\u7ea7
+  \u4e00\u7ea7\u540d
+  \u4e8c\u7ea7
+  \u4e8c\u7ea7\u540d
+  Shape_Leng
+  \u5907\u6ce8
+  Shape_Area
+  \u7ec4\u522b
+
+planned_landuse keys:
+  FID
+  OBJECTID
+  Landuse_ty
+  \u4e00\u7c7b\u7528
+  \u4e8c\u7c7b\u7528
+  \u4e8c\u7c7b_1
+  ORIG_FID
+  \u4e00\u7c7b_1
+  Shape_Leng
+  Shape_Area
+  Area
+
+planned_roads keys:
+  FID
+  OBJECTID
+  \u9053\u8def\u7c7b
+  length
+  Shape_Leng
+
+scenic_spots keys:
+  FID
+  OBJECTID
+  id
+  name
+  address
+  photos_url
+  updatetime
+  gcj02lon
+  gcj02lat
+  wgs84lon
+  wgs84lat
+  type
+  typecode
+  \u5927\u7c7b
+
+CSV columns:
+  FID
+  \u6587\u4fdd\u7ea7
+  \u666f\u70b9\u4ecb\u7ecd\uff0880\u2013150\u5b57\uff09
+  \u63a8\u8350\u6e38\u89c8\u65f6\u957f
+  \u6807\u7b7e
+  \u7f16\u5199\u4f9d\u636e

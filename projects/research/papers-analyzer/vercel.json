@@ -1,0 +1,8 @@
+{
+  "name": "bib-analysis-tool",
+  "version": 2,
+  "buildCommand": "",
+  "outputDirectory": ".",
+  "cleanUrls": true,
+  "trailingSlash": false
+}

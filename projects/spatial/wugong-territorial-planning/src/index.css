@@ -1,0 +1,15 @@
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "pmzd";
+  src: url("/sc-datav/font/pmzd.woff2") format("woff2");
+}

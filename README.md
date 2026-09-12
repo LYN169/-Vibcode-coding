@@ -1,3 +1,23 @@
+# Vibcode Coding · 课程与研究工具集
+
+分享用代码实现研究与课程想法的过程，提供源码、案例资源和复刻说明。
+
+## 项目分类
+
+| 分类 | 项目 | 源码入口 | 在线体验 |
+| --- | --- | --- | --- |
+| 区域经济与空间分析 | Regional Potential Lab：县域经济潜力与空间错配诊断 | 本仓库根目录，见下方原项目说明 | 见 [部署说明](DEPLOYMENT.md) |
+| 文献研究 | Papers Analyzer：文献导入、筛选、统计和导出 | [projects/research/papers-analyzer](projects/research/papers-analyzer) | [打开工具](https://bib-analysis-tool.vercel.app) |
+| 国土空间规划 | 武功镇国土空间规划三维可视地图 | [projects/spatial/wugong-territorial-planning](projects/spatial/wugong-territorial-planning) | [打开地图](https://wugong-sc-datav.vercel.app/sc-datav/#/wugong) |
+
+两个新增项目各自包含 README、源码、部署配置和许可证。2026-09-12 从作者当前项目整理；Papers Analyzer 的 HTML 已与线上版本逐字比对一致。武功镇项目提供当前本地源码和案例资源，验证结果见 [发布记录](docs/releases/2026-09-12-two-tools.md)。
+
+原有 Regional Potential Lab 保持在根目录，原部署路径继续有效。部署新增项目时，请把对应项目子目录设置为平台的 Root Directory，不要把仓库根目录当作新增项目的入口。
+
+新增项目的代码许可见各自 LICENSE；第三方资源与数据保留各自权利。原有项目的许可范围未在此次整理中变更。
+
+---
+
 # Regional Potential Lab
 
 县域经济潜力与空间错配诊断平台 V1.0。原型基于 Streamlit、GeoPandas、Folium 与 Plotly，实现 2019/2024 联合尺度评分、空间错配诊断、跨期变化、地图浏览和结果导出。
